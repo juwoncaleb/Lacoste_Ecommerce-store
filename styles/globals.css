@@ -1,0 +1,1685 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.signn {
+  color: red;
+}
+
+.log {
+  height: 50px;
+}
+
+/* HEADER */
+.navIcon {
+  height: 30px;
+  margin-top: 20px;
+}
+
+.logt {
+  position: relative;
+  top: 10px
+}
+
+
+.lacoste {
+  width: 130px;
+}
+
+.lefticon {
+  width: 100px;
+
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .backgroundImage{
+    height: 600px !important;
+  }
+  .prodImg {
+    width: 500px;
+  }
+
+  .lefticon {
+    margin-left: 50px;
+  }
+
+  .cupon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .promo {
+    display: grid;
+
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .deleteItemIcon {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .promo {
+    position: relative;
+    right: 60px
+  }
+}
+
+.rightIcon {
+  margin-right: 100px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .rightIcon {
+    margin-right: 50px;
+  }
+}
+
+.moon {
+  margin-right: 30px;
+  height: 28px !important;
+  cursor: pointer;
+}
+
+.border1 {
+  border: 0.7px solid black;
+  max-width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .border1 {
+    border: 0.7px solid black;
+    max-width: 100%;
+    margin-left: 60px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 581px) {
+  .headersText {
+    font-size: 10px;
+    margin-right: 12px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .headersText {
+    font-size: 11px;
+  }
+}
+
+
+.itemName {
+  font-family: Archivo;
+  font-weight: bold;
+
+}
+
+.headerText {
+  font-family: Archivo;
+  font-weight: 700;
+}
+
+.itname {
+  font-family: Archivo;
+  font-size: 17px;
+}
+
+.smallerText {
+  font-family: Archivo;
+  font-size: 20px;
+}
+
+.headerText,
+p {
+  text-align: center;
+}
+
+.mainText {
+  text-align: center;
+  position: relative;
+  top: 600px;
+}
+
+.mainText_one {
+  font-family: Archivo;
+  font-weight: 900;
+
+  font-size: 75px;
+}
+
+.mainText_sub {
+  font-family: Archivo;
+  font-weight: 200;
+  font-size: 19px;
+  position: relative;
+  bottom: 30px;
+}
+
+.sub {
+  position: relative;
+  bottom: 30px;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.backgroundImage {
+  margin-top: 100px;
+  height: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+
+}
+
+@media only screen and (max-width: 565px) {
+  .backgroundImage {
+    height: 500px;
+  }
+}
+
+.landingPage_text {
+  position: relative;
+  top: 80px;
+}
+
+.landingPage_MainText {
+  font-family: Mukta;
+}
+
+.landingPage_subText {
+  font-family: Archivo;
+
+  font-style: italic;
+  font-size: 20px;
+}
+
+.landingPage_secondPage {
+  position: relative;
+  top: 200px;
+}
+
+.image1 {
+  max-height: 400px;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .landingPage_secondPage {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.category {
+  position: relative;
+  top: 180px;
+  font-family: Archivo;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.catergory_subs {
+  font-family: Archivo;
+  font-weight: 600;
+}
+
+.lines {
+  border: 3px solid black;
+  position: relative;
+  top: 500px;
+  padding-top: 100px;
+  margin-bottom: 100pxb;
+}
+
+.bar {
+  position: relative;
+  margin-top: 400PX;
+  height: 900px;
+}
+
+.bars {
+  border: 1px solid black;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lineBar {
+  position: relative;
+}
+
+.line {
+  position: relative;
+  bottom: 250px;
+}
+
+.footwear {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: white;
+  text-shadow: 5px 5px black;
+}
+
+#black {
+  color: black;
+  text-shadow: 0px 0px black;
+}
+
+.logo1 {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .logo1 {
+    display: none;
+  }
+}
+
+
+
+.tat {
+  width: 300px;
+  position: relative;
+  top: 180px;
+  margin-left: 75%;
+}
+
+@media only screen and (max-width: 963px) {
+  .tat {
+    width: 250px;
+    position: relative;
+    top: 180px;
+    right: 200px;
+  }
+}
+
+@media only screen and (min-width: 963px) {
+  .tat {
+    width: 250px;
+    position: relative;
+    top: 180px;
+    right: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 759px) {
+  .tat {
+    width: 250px;
+    position: relative;
+    top: 90px;
+    right: 200px;
+  }
+}
+
+
+
+
+.essential_text {
+  font-family: Archivo;
+  font-weight: 900;
+  position: relative;
+  left: 20px;
+}
+
+.recommendation {
+  position: relative;
+  top: 100px;
+}
+
+.recommend_img1 {
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommend_img2 {
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommend_img0 {
+  height: 480px;
+  width: 800px;
+}
+
+.inside {
+  width: 70px;
+  height: 50px;
+}
+
+.Lacoste_inside {
+  position: relative;
+  font-size: 25px;
+  margin-left: 5%;
+  font-weight: 900;
+  font-family: Mukta;
+
+}
+
+h1 {
+  color: coral;
+}
+
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.grid-container div img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.essentials {
+  position: relative;
+  top: 450px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .essentials {
+    position: relative;
+    top: 350px;
+  }
+}
+
+
+@media only screen and (max-width: 745px) {
+  .containerTop {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1012px) {
+  .containerTop {
+    margin-right: 150px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  transform: skew(5deg);
+}
+
+.container .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+
+.container .card .card__head {
+  color: black;
+  background: rgba(255, 30, 173, 0.75);
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: Archivo;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container .card .card__head {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media only screen and (min-width: 843px) {
+  .imgOption {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 843px) {
+  .textFix {}
+
+}
+
+.textFix {
+  margin-left: 50px;
+}
+
+.container .card:hover {
+  flex-grow: 10;
+}
+
+.container .card:hover img {
+  filter: grayscale(0);
+}
+
+.container .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  transform: rotate(0deg) skew(-5deg);
+}
+
+.container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.container .card:not(:nth-child(5)) {
+  margin-right: 1em;
+}
+
+.recommended {
+  position: relative;
+  top: 300px;
+}
+
+.lg {
+  position: relative;
+  top: 150px;
+  margin-left: 5%;
+}
+
+.recommended_text {
+  position: relative;
+  left: 20px;
+  font-family: Archivo;
+  font-weight: 900;
+}
+
+.recomend_logo {
+  width: 50px;
+}
+
+.world {
+  margin-left: 5%;
+}
+
+.sizes {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.lacoste_Text {
+  position: relative;
+  left: 20px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .fitz {
+    margin-right: 70%
+  }
+}
+
+.fitz {
+  margin-right: 20%;
+}
+
+.itt {
+  margin-right: 100px;
+
+}
+
+.countz {
+  position: relative;
+  left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .fits {
+    display: grid;
+
+  }
+
+  .itt {
+    margin-left: 55%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lacoste_Text {
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .landingPage_secondPage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+.menChoice {
+  margin-right: 80%;
+  margin-top: 100px;
+}
+
+.footer {
+  position: relative;
+  top: 100px;
+  background-color: #0C090A;
+  color: white;
+  font-family: Archivo;
+  margin-top: 100px;
+
+}
+
+.essentials {
+  margin-bottom: 450px;
+}
+
+.topIck {
+  position: relative;
+  top: 120px;
+}
+
+.icon {
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emailLine {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.borderLine {
+  border: 2px solid white;
+  width: 80%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerMenu {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.SignUpButton {
+  background-color: aliceblue;
+  color: black;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.email {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.sign {
+  position: relative;
+  top: 10px;
+}
+
+.footerIcon {
+  width: 20px;
+}
+
+.footerMain {
+  font-size: 18px;
+  font-family: Archivo;
+  font-weight: 700;
+}
+
+.but {
+  background-color: red;
+}
+
+.lastfooter {
+  background-color: white;
+  font-family: Archivo;
+  color: #0C090A;
+  font-weight: 700;
+}
+
+.lastIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.payment {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.shipping {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.loadIcon {
+  position: relative;
+  top: 20px;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cb7cef;
+}
+
+.heading {
+  font-size: 35px;
+  color: white;
+}
+
+.newBack {}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.buttonColors {
+  background-color: darkcyan;
+  padding: 10px;
+}
+
+.gridsystem {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.newgrid {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+}
+
+.menStyle {
+  margin-top: 100px;
+}
+
+.menStyleGrid {
+  position: relative;
+  left: 10%;
+  bottom: 100px;
+}
+
+.menStyle {
+  height: 400px;
+}
+
+.rev {
+  height: 500px;
+}
+
+.middle {
+  position: relative;
+  right: 150px;
+}
+
+.SecondTab {
+  margin-top: 200px;
+}
+
+.explore {
+  margin-top: 100px;
+  height: 100px;
+  width: 200px;
+  color: white;
+  background-color: black;
+
+}
+
+.middleImage {
+  height: 670px;
+}
+
+.exploreButton {
+  height: 50px;
+  background-color: #0C090A;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  color: white;
+}
+
+.exploreText {
+  margin: auto;
+}
+
+.thirdTab {
+  margin-top: 150px;
+}
+
+.thirdTabLine {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+.fourthTab {
+  margin-bottom: 150px;
+}
+
+.textline {
+  width: 100px;
+  border: 0.5px solid black;
+}
+
+.textline_2 {
+  width: 50px;
+  border: 0.5px solid black;
+}
+
+.textline_3 {
+  width: 50px;
+  border: 0.5px solid black;
+}
+
+.textline_4 {
+  width: 60px;
+  border: 0.5px solid black;
+}
+
+.textline_5 {
+  width: 30px;
+  border: 0.5px solid black;
+}
+
+.textline_6 {
+  width: 40px;
+  border: 0.5px solid black;
+}
+
+.sectionMainHeader {
+  margin-bottom: 100px;
+  position: relative;
+  bottom: 100px;
+}
+
+.menStyleGrid_third {
+  margin-top: 100px;
+}
+
+.lastTab {
+  position: relative;
+  bottom: 150px;
+}
+
+.topPick {
+  height: 300px;
+  width: 300px;
+}
+
+
+@media only screen and (max-width: 623px) {
+  .productGrid {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .deleteItemIcon {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .lastCheck {
+    position: relative;
+    left: 85px;
+  }
+}
+
+@media only screen and (max-width: 856px) {
+  .checkou {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .checkoutt {
+    display: grid;
+  }
+
+
+}
+
+.headerFixed {
+  background: white;
+  z-index: 1;
+
+}
+
+@media only screen and (max-width: 575px) {
+  .finalcart {
+    font-size: 13px !important;
+    width: 300px;
+  }
+
+  .fill {
+    width: 300px !important;
+    margin-left: 100px;
+  }
+
+  .shipingTexts {
+    position: relative;
+    right: 120px;
+    font-size: 13px !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .finalcart {
+    margin-left: 70px;
+  }
+
+
+}
+
+
+.lastTabText {
+  position: relative;
+  bottom: 70px;
+}
+
+.loginButton {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google {
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  padding: auto;
+
+}
+
+.loginText {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputSize {
+  text-align: center;
+
+  height: 40px;
+  background-color: white;
+}
+
+.buttonLogin {
+  border: 2px solid black;
+  background-color: #0C090A;
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.signUp {
+  color: red;
+}
+
+.signUpImg {
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.GreyText {
+  color: gray;
+}
+
+.itemHeader {
+  font-family: Archivo;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+.itemHeader_Main {
+  font-family: Archivo;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-left: 5%;
+
+
+}
+
+.checkOne {
+  font-family: Archivo;
+  font-weight: 900;
+
+}
+
+.shipping {
+  font-family: Archivo;
+  font-weight: 900;
+}
+
+.cart {
+
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cartImg {
+  width: 150px;
+}
+
+.color {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.black {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.nameOfItem {
+  width: 70%;
+}
+
+.checkoutHeader {
+  font-family: Archivo;
+  font-weight: 900;
+  letter-spacing: 3px;
+
+}
+
+.count {
+  letter-spacing: 10px;
+
+}
+
+.promoCode {
+  height: 45px;
+  width: 250px;
+  border: 2px solid black;
+}
+
+.promoButton {
+  height: 45px;
+  width: 120px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-top: 7px;
+  letter-spacing: 1.3px;
+
+}
+
+.proceed {}
+
+.promoCode_Header {
+  text-align: justify;
+}
+
+.promo {
+  margin-left: 80px;
+}
+
+.final_checkout_Header {
+  font-family: Archivo;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.checkout_Line {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 13px;
+}
+
+.proceed_checkOut {
+  height: 45px;
+  background-color: black;
+  margin-top: 40px;
+  color: white;
+  padding-top: 10px;
+}
+
+.checkOne {
+  margin-top: 120px;
+}
+
+.checkoutTwo_Text {
+  margin-top: 70px;
+  font-weight: 900;
+  font-family: Archivo;
+}
+
+.shipping_Header {
+  margin-top: 30px;
+  font-weight: 900;
+  font-family: Archivo;
+
+
+}
+
+.shipping_subHeader {
+  margin-top: 80px;
+  font-family: Archivo;
+  font-size: 30px;
+  font-weight: 900;
+
+}
+
+.shipping_text {
+  font-weight: 600px;
+  font-family: Archivo;
+  font-size: 20px;
+}
+
+.shipping_Header_text {
+  font-family: Archivo;
+  font-weight: 500;
+  margin-top: 40px;
+
+}
+
+.checkOutEmail {
+  width: 600px;
+  height: 50px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.email_Input {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.email_Input_bar {
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 40px;
+  width: 600px;
+
+}
+
+@media screen and (max-width: 622px) {
+
+  .email_Input_bar {
+
+    width: 300px !important;
+
+  }
+
+  .button_email {
+    width: 300px !important;
+
+  }
+
+
+}
+
+
+.prodImg {
+  width: 500px;
+}
+
+@media screen and (max-width:414px) {
+  .headerText {
+    position: relative;
+    right: 20px;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  .headerText {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .productImages{
+    margin-right: 100px !important;  }
+  .landingPage_secondPage{
+    margin-right: 30px;
+  }
+  .cartCount {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  .comImage {
+    height: 250px;
+    margin-left: auto;
+    margin-right: 100px;
+  }
+
+  .prodImg {
+    width: 300px;
+    
+  }
+
+  .itemPrice {
+    font-family: Archivo;
+    font-weight: bold;
+    margin-right: 80px;
+    position: relative;
+    bottom: 20px;
+
+  }
+
+  .itemName {
+    margin-right: 80px;
+  }
+
+  .urbanline {
+    margin-top: 20px;
+
+  }
+
+  .textline_6 {
+    margin-left: 50px;
+  }
+
+  .officeMob {
+    margin-top: 10px;
+
+  }
+
+  .textline_5 {
+    margin-left: 50px;
+  }
+
+  .reetro {
+    margin-top: 20px;
+  }
+
+  .headerTe {
+    font-family: Archivo;
+    font-weight: bold;
+    margin-left: 50px;
+
+  }
+
+  .itemHeader_Main {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+
+  .itemHeader {
+    margin-left: 60px;
+  }
+
+  .com {
+    margin-top: 20px;
+  }
+
+  .textline_3 {
+    margin-left: 50px;
+  }
+
+  .mobpad {
+    margin-top: 20px;
+  }
+
+  .menfashion {
+    width: 300px;
+  }
+
+  .headerTex {
+    margin-left: 10px;
+  }
+
+  .menChoice {
+    margin-left: 170px;
+
+  }
+
+  .border1 {
+    position: relative;
+    bottom: 10px;
+    margin-left: 50px;
+  }
+
+  .headerText {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navIcon {
+    height: 20px;
+
+  }
+
+  .moon {
+    height: 20px !important;
+
+  }
+
+  .checkoutt {
+    margin-left: 100px;
+  }
+
+
+}
+
+.dis {
+  margin-right: 100px;
+}
+
+.men {
+  margin-left: 100px;
+}
+
+.button_email {
+  height: 50px;
+  width: 600px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: white;
+  padding-top: 7px;
+}
+
+.signUpIcon {
+  width: 30px;
+}
+
+.input::placeholder {
+  margin-left: 50px;
+}
+
+.finalcheckout_details {
+  margin-right: 380px;
+}
+
+/* FORM */
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+.widthOfBar {
+  width: 300px;
+}
+
+.profileView {
+  width: 18px;
+}
+
+.productTabOne {
+  height: 100px;
+}
+
+#searchItem {
+  width: 00px;
+  height: 50px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {}
+
+.searchItem {
+  background-color: white;
+  width: 450px;
+  height: 40px;
+}
+
+.productAdmin {
+  background-color: rgba(230, 219, 219, 0.356);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.adminProfile {
+  height: 45px;
+}
+
+.addIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.addProduct {
+  background-color: #4bc970;
+  width: 150px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+.newCategory {
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.productHeader1 {
+  height: 50px;
+}
+
+.productHeader {
+  margin-left: auto;
+}
+
+.productHeader {
+  background-color: #4bc970;
+  height: 50px;
+}
+
+.addproduct {
+  background-color: rgba(158, 152, 152, 0.233);
+
+}
+
+.uploadImage {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border: #0C090A 2px solid;
+}
+
+.fillOrder {
+  width: 350px;
+  height: 60px;
+  border: #3ac162 2px solid;
+}
+
+.fill {
+  width: 450px;
+  height: 60px;
+  border: black 2px solid;
+}
+
+.Submitt {
+  height: 40px;
+  width: 150px;
+  background-color: #3ac162;
+  border: black 2px solid;
+  border-radius: 8px;
+  color: white;
+}
+
+.addproductText {
+  margin-left: 250px;
+}
+
+.editIcon {
+  width: 50px;
+}
+
+.editIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.crud {
+  width: 70px;
+}
+
+.productImages {
+  width: 250px;
+  height: 310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productSection {
+  width: 100%;
+}
+
+.description {
+  width: 50%;
+}
+
+.description_line {
+  border: black 1px solid;
+}
+
+.bag {
+  height: 70px;
+}
+
+.bagText {
+  position: relative;
+  top: 14px;
+  font-size: 20px;
+}
+
+.laundry {
+  height: 30px;
+}
+
+.desc {
+  text-align: start;
+}
+
+.addTocart {
+  width: 150px;
+  border: #0C090A 2px solid;
+  border-radius: 10px;
+}
+
+.cartItem {
+  position: relative;
+  left: 33px;
+  top: 27px;
+}
+
+.cartCount {
+  position: relative;
+  bottom: 23px;
+}
+
+.finalCheckout {
+  width: 50%;
+  background-color: black;
+}
+
+.uploadimages {
+  width: 100px;
+}
+
+.uploadicon {
+  width: 50px;
+  height: 20px;
+}
+
+.itemsize {
+  color: red;
+  font-size: 20px;
+}
+
+.sizePrice {
+  margin-left: auto;
+  margin-right: auto;
+
+}
