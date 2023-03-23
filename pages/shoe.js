@@ -32,7 +32,7 @@ export default function ShoePage({ shoeprod }) {
     return (
         <div>
             <Header />
-            <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/')}>Kid</span>  </p>
+            <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/')}>Shoe</span>  </p>
             <div className="grid productSection lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 mt-10">
                 {
                     shoeprod.map((shoes) => (

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../component/Footer'
 import Header from '../component/Header'
 import Link from "next/link"
@@ -12,22 +12,13 @@ export default function SummerFineItem({ allProd }) {
     const router = useRouter()
 
     console.log(allProd);
-    const [prod, setProd] = useState(false)
     // this is used in client side cachng
     const { prod: data, status } = useQuery('prod', () => allProd);
     //LOADING SPINNER
-    if (status === 'loading') return
-     <div className='ml-auto mrauto'>
-        LOADING DATA
-
-     </div>
-    if (status === 'error') return 
-    <div>Error loading data</div>;
-    if (prod && prod.length === 0) {
-        setProd(true)
-    }
-
+    
+   
     return (
+        <div>
         <div>
             <Header />
             <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/men')}>Men</span>  </p>
@@ -50,12 +41,14 @@ export default function SummerFineItem({ allProd }) {
             </div>
             <Footer />
         </div>
+    </div>
     )
 }
 
 export const getServerSideProps = async () => {
     try {
         await dbConnect();
+        console.log("fetched server side");
         const allSum = await Product.find();
 
         return {

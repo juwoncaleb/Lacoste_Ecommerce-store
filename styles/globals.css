@@ -23,7 +23,12 @@
   top: 10px
 }
 
-
+.loader{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-top: 300px;
+}
 .lacoste {
   width: 130px;
 }
