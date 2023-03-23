@@ -40,24 +40,7 @@ export const getServerSideProps = async () => {
     try {
         await dbConnect();
         let allComfort = await Comfort.find();
-        // allComfort = allComfort.map((c) => ({
-
-        //     _id: c._id.valueOf(),
-        //     category: c.category,
-        //     subCategory: c.subCategory,
-        //     description: c.description,
-        //     name: c.name,
-        //     price: c.price,
-        //     images: c.images,
-        //     stocks: c.stocks,
-        //     totalPrice: c.totalPrice,
-        //     createdAt: c.createdAt,
-        //     updatedAt: c.updatedAt,
-        //     __v: c.__v,
-        // }
-
-        // )
-        // )
+       
         console.log(allComfort);
 
         return {
