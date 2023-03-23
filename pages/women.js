@@ -9,9 +9,8 @@ import { useQuery } from 'react-query';
 import { useRouter } from 'next/router'
 
 export default function Woomen({ woomen }) {
-    // const isServerReq = req => !req.url.startsWith('/_next');
+    // const isServerReq = req => !req.url.startsWith('/_next'
     const router = useRouter()
-    
 
     return (
         <div>
