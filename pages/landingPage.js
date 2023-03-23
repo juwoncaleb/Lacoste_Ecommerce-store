@@ -14,7 +14,7 @@ export default function LandingPage() {
           Memorial Day
         </p>
         <p className="text-5xl md:text-8xl landingPage_MainText">
-          Weekend Sales
+          Weekend Sale
         </p>
 
         <p className=" landingPage_subText">
