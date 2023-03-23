@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useSelector } from "react-redux";
 import { useSession, signIn, signOut } from "next-auth/react"
 
+import Link from 'next/link'
 
 function Header() {
   const router = useRouter()
@@ -24,30 +25,31 @@ function Header() {
           />
         </div>
 
-
-        <div onClick={() => router.push('/')}>
+        <Link href="/" >
           <img onClick={() => router.push('/')} className="lacoste cursor-pointer" src="./logos.png" />
-        </div>
-
+        </Link>
 
 
         <div className="flex justify-around rightIcon">
-          <img onClick={() => router.push('/auth')}
+          <img onClick={() => router.push('/')}
             className="navIcon"
             src="https://img.icons8.com/ios/50/undefined/search--v3.png"
           />
           <img
-            onClick={() => { signIn() }} className="navIcon"
+            className="navIcon"
             src="https://img.icons8.com/ios/50/undefined/user--v3.png"
           />
 
 
-          <div className="cursor-pointer" onClick={() => router.push('/checkoutOne')} >
 
-            <img
-              className="navIcon "
-              src="https://img.icons8.com/ios/50/undefined/shopping-bag--v1.png"
-            />
+          <div className="cursor-pointer"  >
+            <Link href="/checkoutOne" >
+              <img
+                className="navIcon "
+                src="https://img.icons8.com/ios/50/undefined/shopping-bag--v1.png"
+              />
+            </Link>
+
             <p className="cartCount">
               {orderQuantity}
             </p>
@@ -58,14 +60,21 @@ function Header() {
 
       <hr className="border1 " />
       <div className="headerText flex justify-between ">
-        <p className="mt-2 men cursor-pointer headersText mr-2 " onClick={() => router.push('/men')}>MEN</p>
-
-        <p className="mt-2  cursor-pointer headersText	mr-2 " onClick={() => router.push('/women')}>WOMEN</p>
-
-        <p className="mt-2  cursor-pointer	headersText mr-2 " onClick={() => router.push('/kids')}>KIDS</p>
-        <p className="mt-2  cursor-pointer	headersText mr-2 " onClick={() => router.push('/shoe')}>SHOES</p>
-
-        <p className="mt-2  dis cursor-pointer headersText	mr-2 " onClick={() => router.push('/discount')}> DISCOUNT</p>
+        <Link href="/men" >
+          <p className="mt-2 men cursor-pointer headersText mr-2 " >MEN</p>
+        </Link>
+        <Link href="/women" >
+          <p className="mt-2  cursor-pointer headersText	mr-2 " >WOMEN</p>
+        </Link>
+        <Link href="/kids" >
+          <p className="mt-2  cursor-pointer	headersText mr-2 " >KIDS</p>
+        </Link>
+        <Link href="/shoe" >
+          <p className="mt-2  cursor-pointer	headersText mr-2 " >SHOES</p>
+        </Link>
+        <Link href="/discount" >
+        <p className="mt-2  dis cursor-pointer headersText	mr-2 "> DISCOUNT</p>
+        </Link>
       </div>
       <hr className="border1 mt-3" />
 

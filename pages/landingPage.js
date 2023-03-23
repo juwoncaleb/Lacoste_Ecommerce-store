@@ -21,7 +21,7 @@ export default function LandingPage() {
           40% off storewide with code FORTYOFF
         </p>
       </div>
-      <img className="backgroundImage " src="new.png" />
+      <img className="backgroundImage " src="https://ik.imagekit.io/juwoncaleb/new_ZIYblYTkV.png?updatedAt=1679579250774" />
 
       <p className="category">Lacoste Wardtobe Essentials</p>
 
@@ -53,7 +53,7 @@ export default function LandingPage() {
           <p className="lacoste_Text ">The Lacoste World</p>
         </div>
         {/* LINES */}
-        <img className="tat" src="https://res.cloudinary.com/ddjlsw268/image/upload/v1667688338/uploads/vdj5w2dqctto29dqrrkp.png" />
+        <img  className="tat" src="https://res.cloudinary.com/ddjlsw268/image/upload/v1667688338/uploads/vdj5w2dqctto29dqrrkp.png" />
 
         <div className="lineBar">
           <div className="line">

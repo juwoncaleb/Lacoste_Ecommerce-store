@@ -11,19 +11,19 @@ import Product from "../../model/Product";
 
 
 
-export default function Item({ productItem }) {
+export default function Item({ summerclothes }) {
     const dispatch = useDispatch()
     const router = useRouter()
 
 
-    let price = productItem.price
-    // let quantity = productItem.quantity
+    let price = summerclothes.price
+    // let quantity = summerclothes.quantity
     let [amount, setAmount] = useState(1)
     const [itemSize, setItemSize] = useState("");
     console.log(itemSize);
 
     const addToCart = () => {
-        dispatch(addProduct({ ...productItem, itemSize, amount, price }))
+        dispatch(addProduct({ ...summerclothes, itemSize, amount, price }))
     }
 
     const cart = useSelector((state) => state.cart)
@@ -32,10 +32,10 @@ export default function Item({ productItem }) {
         <div>
             <Header />
             <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/men')}>Men</span>   <span className='GreyText ml-2 cursor-pointer' onClick={() => router.push('/summerFine')}>   / Summer FIne</span></p>
-            <p className='itemHeader_Main text-5xl '>{productItem.name}</p>
-            <p className='font-light mt-4 text-4xl'>{productItem.category}</p>
-            <p className='font-light mt-4 text-3xl'>${productItem.price}</p>
-            <img className='ml-auto mr-auto mt-10 prodImg' src={productItem.images} />
+            <p className='itemHeader_Main text-5xl '>{summerclothes.name}</p>
+            <p className='font-light mt-4 text-4xl'>{summerclothes.category}</p>
+            <p className='font-light mt-4 text-3xl'>${summerclothes.price}</p>
+            <img className='ml-auto mr-auto mt-10 prodImg' src={summerclothes.images} />
             <div className='ml-auto mr-auto mt-4 description'>
                 <hr className='description_line mt-6' />
                 <p>Sizes</p>
@@ -115,7 +115,7 @@ export const getServerSideProps = async ({ query  }) => {
             const summa = await Product.findById(id)
             return {
                 props: {
-                    comfort: JSON.parse(JSON.stringify(summa)), // <== here is a solution
+                    summerclothes: JSON.parse(JSON.stringify(summa)), // <== here is a solution
     
                 },
             };

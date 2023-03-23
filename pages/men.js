@@ -1,9 +1,4 @@
 import React, { useEffect, useState, useMemo } from "react";
-// import dbConnect from "../../utils/Mongo";
-// import Product from "../../model/Product";
-// import axios from "axios";
-
-import { useRouter } from 'next/router'
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Link from "next/link"
@@ -12,7 +7,6 @@ import axios from 'axios'
 // AUTHENTICATION
 import { useSession, signIn, signOut } from "next-auth/react"
 export default function Men() {
-  const router = useRouter()
 
 
   return (
@@ -28,39 +22,50 @@ export default function Men() {
 
 
       <div className="grid grid-rows-3 grid-flow-col md:ml-10 gap-4 ">
-        <div className="row-start-2 row-span-2 ...">  <div className="" onClick={() => router.push('/summerFine')}>
-          <img className="  cursor-pointer imgOption  " src="koofo.jpg" />
-          <div className="mobpad">
-            <p className="headerText text-1xl md:text-2xl flex cursor-pointer textFix"> Summer Fine</p>
-            <hr className="textline textFix" />
-          </div>
+        <div className="row-start-2 row-span-2 ...">
+          <div>
+            <Link href="/summerFine" >
+              <img className="  cursor-pointer imgOption  " src="koofo.jpg" />
+            </Link>
+            <div className="mobpad">
+              <p className="headerText text-1xl md:text-2xl flex cursor-pointer textFix"> Summer Fine</p>
+              <hr className="textline textFix" />
+            </div>
 
-        </div>
+          </div>
         </div>
         <div className="row-end-3 row-span-2 ...">
           <div className=" "  >
-            <img onClick={() => router.push('/casual')} className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+            <Link href="casual">
+              <img className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+
+            </Link>
             <p className=" text-1xl md:text-2xl flex  "> Casual</p>
             <hr className="textline_2" />
-
-
           </div>
         </div>
-        <div className="row-start-2 row-span-2 ...">  <div className="menStyleGrid_third" onClick={() => router.push('/office')}>
+        <div className="row-start-2 row-span-2 ...">  <div className="menStyleGrid_third" >
+          <Link href="office">
+            <img className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+          </Link>
           <img className="cursor-pointer imgOption  " src="work.jpg" />
           <div className="officeMob">
             <p className="headerTe text-1xl md:text-2xl flex  "> Office</p>
             <hr className="textline_3" />
           </div>
 
-        </div></div>
+        </div>
+        </div>
 
       </div>
 
 
       <div className="grid grid-rows-3 grid-flow-col gap-4 md:ml-10 mb-10">
         <div className="row-start-2 row-span-2 ...">
-          <div className="" onClick={() => router.push('/office')}>
+          <Link href="office">
+            <img className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+          </Link>
+          <div className="" >
             <img className="cursor-pointer imgOption   " src="sk.jpg" />
             <div className="urbanline">
               <p className="headerTe text-1xl md:text-2xl flex  "> Urban</p>
@@ -73,7 +78,10 @@ export default function Men() {
 
         <div className="row-end-3 row-span-2 ...">
 
-          <div className="cursor-pointer " onClick={() => router.push('/comfort')}>
+          <div className="cursor-pointer ">
+            <Link href="comfort">
+              <img className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+            </Link>
             <img className=" imgOption " src="ss.jpg" />
             <div className="com">
               <p className="headerText text-1xl md:text-2xl flex textFix"> Comfort</p>
@@ -82,7 +90,10 @@ export default function Men() {
 
           </div>
         </div>
-        <div className="row-start-2 row-span-2 ..."><div className=" " onClick={() => router.push('/retro')}>
+        <div className="row-start-2 row-span-2 ..."><div className=" " >
+          <Link href="retro">
+            <img className="cursor-pointer mt-20 imgOption " src="bro.jfif" />
+          </Link>
           <img className=" cursor-pointer imgOption " src="jerry.jpg" />
           <div className="reetro">
             <p className="headerTe text-1xl md:text-2xl flex  " > Retro</p>
@@ -134,7 +145,7 @@ export default function Men() {
         </div>
       </div>
 
-     
+
       <Footer />
     </div>
   );
