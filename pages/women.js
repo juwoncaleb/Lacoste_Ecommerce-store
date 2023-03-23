@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Footer from '../component/Footer'
 import Header from '../component/Header'
 import Link from "next/link"
@@ -12,6 +12,21 @@ export default function Woomen({ woomen }) {
     // const isServerReq = req => !req.url.startsWith('/_next'
     const router = useRouter()
 
+    console.log(woomen);
+    const [prod, setProd] = useState(false)
+    // this is used in client side cachng
+    const { prod: data, status } = useQuery('prod', () => woomen);
+    //LOADING SPINNER
+    if (status === 'loading') return
+     <div className='ml-auto mr-auto'>
+        LOADING DATA
+
+     </div>
+    if (status === 'error') return 
+    <div>Error loading data</div>;
+    if (prod && prod.length === 0) {
+        setProd(true)
+    }
     return (
         <div>
             <Header />

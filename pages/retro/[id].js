@@ -10,6 +10,7 @@ import dbConnect from "../../utils/Mongo";
 import Retro from "../../model/Retro";
 
 export default function Item({ retro }) {
+    console.log(retro)
     const dispatch = useDispatch()
     const router = useRouter()
 
@@ -111,7 +112,7 @@ export const getServerSideProps = async ({ query  }) => {
             const retoBoom = await Retro.findById(id)
             return {
                 props: {
-                    comfort: JSON.parse(JSON.stringify(retoBoom)), // <== here is a solution
+                    retro: JSON.parse(JSON.stringify(retoBoom)), // <== here is a solution
     
                 },
             };

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addProduct } from '../../redux/cartSlice'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import Link from "next/link"
 
 import dbConnect from "../../utils/Mongo";
 import Kid from "../../model/Kid";
@@ -14,7 +15,6 @@ export default function Item({ kid }) {
     let routerId = router.query
     let { id } = routerId
 
-    let price = kid.price
     // let quantity = kid.quantity
     let [amount, setAmount] = useState(1)
     const [itemSize, setItemSize] = useState("");
@@ -29,7 +29,8 @@ export default function Item({ kid }) {
     return (
         <div>
             <Header />
-            <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/men')}>Men</span>   <span className='GreyText ml-2 cursor-pointer' onClick={() => router.push('/summerFine')}>   / Summer FIne</span></p>
+            <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/kids')}>Kids</span> </p>
+
             <p className='itemHeader_Main text-5xl '>{kid.name}</p>
             <p className='font-light mt-4 text-4xl'>{kid.category}</p>
             <p className='font-light mt-4 text-3xl'>${kid.price}</p>
@@ -104,27 +105,26 @@ export default function Item({ kid }) {
     )
 }
 
-export const getServerSideProps = async ({ query  }) => {
-    const {id} = query
+export const getServerSideProps = async ({ query }) => {
+    const { id } = query
     console.log(id);
-        try {
-            await dbConnect();
-            const kiddies = await Kid.findById(id)
-            return {
-                props: {
-                    kid: JSON.parse(JSON.stringify(kiddies)), // <== here is a solution
-    
-                },
-            };
-        } catch (error) {
-            console.error(error);
-            return {
-                props: {
-                    comfort: [],
-                },
-            };
-        }
-    };
-    
-    
-    
+    try {
+        await dbConnect();
+        const kiddies = await Kid.findById(id)
+        return {
+            props: {
+                kid: JSON.parse(JSON.stringify(kiddies)), // <== here is a solution
+
+            },
+        };
+    } catch (error) {
+        console.error(error);
+        return {
+            props: {
+                comfort: [],
+            },
+        };
+    }
+};
+
+

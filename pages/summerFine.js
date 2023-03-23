@@ -14,7 +14,7 @@ export default function SummerFineItem({ allProd }) {
     console.log(allProd);
     const [prod, setProd] = useState(false)
     // this is used in client side cachng
-    const { prod: cachednewJobs, status } = useQuery('prod', () => allProd);
+    const { prod: data, status } = useQuery('prod', () => allProd);
     //LOADING SPINNER
     if (status === 'loading') return
      <div className='ml-auto mrauto'>

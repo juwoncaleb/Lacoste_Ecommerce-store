@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Footer from '../component/Footer'
 import Header from '../component/Header'
 import Link from "next/link"
@@ -6,10 +6,28 @@ import axios from 'axios'
 import dbConnect from "../utils/Mongo";
 import Shoe from "../model/Shoe";
 import { useRouter } from 'next/router'
+import { useQuery } from 'react-query';
+
 
 export default function ShoePage({ shoeprod }) {
     const isServerReq = req => !req.url.startsWith('/_next');
     const router = useRouter()
+
+    console.log(shoeprod);
+    const [prod, setProd] = useState(false)
+    // this is used in client side cachng
+    const { prod: data, status } = useQuery('prod', () => shoeprod);
+    //LOADING SPINNER
+    if (status === 'loading') return
+    <div className='ml-auto mr-auto'>
+        LOADING DATA
+
+    </div>
+    if (status === 'error') return
+    <div>Error loading data</div>;
+    if (prod && prod.length === 0) {
+        setProd(true)
+    }
 
     return (
         <div>
