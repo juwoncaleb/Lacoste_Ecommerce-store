@@ -4,12 +4,14 @@ import Header from '../component/Header'
 import Link from "next/link"
 import dbConnect from "../utils/Mongo";
 import Women from "../model/Women";
+import { useQuery } from 'react-query';
 
 import { useRouter } from 'next/router'
 
 export default function Woomen({ woomen }) {
     // const isServerReq = req => !req.url.startsWith('/_next');
     const router = useRouter()
+    
 
     return (
         <div>
