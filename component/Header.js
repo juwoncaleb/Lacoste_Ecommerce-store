@@ -40,24 +40,17 @@ function Header() {
             src="https://img.icons8.com/ios/50/undefined/user--v3.png"
           />
 
-          <div onClick={() => router.push('/checkoutOne')}>
-          <img
-              className="navIcon "
-              src="https://img.icons8.com/ios/50/undefined/shopping-bag--v1.png"
-            />          </div>
-
-          <div onClick={() => router.push('/')} className="cursor-pointer"  >
-
+          <div className="cursor-pointer" onClick={() => router.push('/checkoutOne')}>
             <img
               className="navIcon "
               src="https://img.icons8.com/ios/50/undefined/shopping-bag--v1.png"
             />
-
-
             <p className="cartCount">
               {orderQuantity}
             </p>
           </div>
+
+        
         </div>
       </div>
       {/* HEADER TWO */}
