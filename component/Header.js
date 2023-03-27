@@ -42,7 +42,7 @@ function Header() {
 
 
 
-          <div onClick={() => router.push('/checkoutOne')}  className="cursor-pointer"  >
+          <div onClick={() => router.push('/checkoutOne')} className="cursor-pointer"  >
           
               <img
                 className="navIcon "
