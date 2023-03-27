@@ -42,13 +42,13 @@ function Header() {
 
 
 
-          <div className="cursor-pointer"  >
-            <Link href="/checkoutOne" >
+          <div onClick={() => router.push('/checkoutOne')}  className="cursor-pointer"  >
+            <div   >
               <img
                 className="navIcon "
                 src="https://img.icons8.com/ios/50/undefined/shopping-bag--v1.png"
               />
-            </Link>
+            </div>
 
             <p className="cartCount">
               {orderQuantity}
