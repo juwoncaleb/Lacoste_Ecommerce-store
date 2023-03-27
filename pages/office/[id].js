@@ -23,12 +23,13 @@ export default function Item({ officeItem }) {
     console.log(itemSize);
 
     const addToCart = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...officeItem, itemSize, amount, price }))
     }
 
     const cart = useSelector((state) => state.cart)
-    console.log(cart);
-    return (
+       return (
         <div>
             <Header />
             <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/kids')}>Kids</span> </p>

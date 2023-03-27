@@ -20,6 +20,8 @@ export default function Item({ women }) {
     console.log(itemSize);
 
     const addToCart = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...women, itemSize, amount, price }))
     }
 

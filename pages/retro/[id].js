@@ -22,12 +22,13 @@ export default function Item({ retro }) {
     console.log(itemSize);
 
     const addToCart = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...retro, itemSize, amount, price }))
     }
 
     const cart = useSelector((state) => state.cart)
-    console.log(cart);
-    return (
+      return (
         <div>
             <Header />
             <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/men')}>Men</span>   <span className='GreyText ml-2 cursor-pointer' onClick={() => router.push('/retro')}>   / Retro</span></p>
@@ -79,10 +80,6 @@ export default function Item({ retro }) {
                     <p className='itemsize mt-1 '>{itemSize}</p>
 
                 </div>
-
-
-                
-
 
                 <div onClick={addToCart} className='bg-black bag mt-2 cursor-pointer'>
                     <p className='text-center text-white bagText '>Add to bag</p>

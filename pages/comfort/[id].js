@@ -25,6 +25,8 @@ export default function Item({ comfort }) {
     console.log(itemSize);
 
     const addToCart = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...comfort, itemSize, amount, price }))
     }
 

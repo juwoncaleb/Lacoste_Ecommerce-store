@@ -18,7 +18,9 @@ export default function Item({ shoeItem }) {
     const [itemSize, setItemSize] = useState("");
     console.log(itemSize);
 
-    const addToCart = () => {
+    const click = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...shoeItem, itemSize, amount, price }))
     }
 
@@ -77,17 +79,13 @@ export default function Item({ shoeItem }) {
 
                 </div>
 
-
-                
-
-
-                <div onClick={addToCart} className='bg-black bag mt-2 cursor-pointer'>
+                <div onClick={click} className='bg-black bag mt-2 cursor-pointer'>
                     <p className='text-center text-white bagText '>Add to bag</p>
                 </div>
                 <hr className='description_line' />
                 <p className='text-left mt-6'>Description</p>
                 <p className='desc mt-6'>
-                    
+
                     - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adip
                 </p>
                 <div className='flex mt-4'>
@@ -103,27 +101,26 @@ export default function Item({ shoeItem }) {
 }
 
 
-export const getServerSideProps = async ({ query  }) => {
-    const {id} = query
+export const getServerSideProps = async ({ query }) => {
+    const { id } = query
     console.log(id);
-        try {
-            await dbConnect();
-            const shoee = await Shoe.findById(id)
-            return {
-                props: {
-                    shoeItem: JSON.parse(JSON.stringify(shoee)), // <== here is a solution
-                },
-            };
-        } catch (error) {
-            console.error(error);
-            return {
-                props: {
-                    comfort: [],
-                },
-            };
-        }
+    try {
+        await dbConnect();
+        const shoee = await Shoe.findById(id)
+        return {
+            props: {
+                shoeItem: JSON.parse(JSON.stringify(shoee)), // <== here is a solution
+            },
+        };
+    } catch (error) {
+        console.error(error);
+        return {
+            props: {
+                comfort: [],
+            },
+        };
+    }
 
-    };
-    
-    
-    
+};
+
+

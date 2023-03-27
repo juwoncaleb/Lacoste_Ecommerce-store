@@ -21,12 +21,15 @@ export default function Item({ kid }) {
     console.log(itemSize);
 
     const addToCart = () => {
-        dispatch(addProduct({ ...kid, itemSize, amount, price }))
+        dispatch(addProduct({ ...kid, itemSize, amount }))
     }
 
     const cart = useSelector((state) => state.cart)
-    console.log(cart);
-    return (
+    function click() {
+        alert("Added to cart!");
+        dispatch(addProduct({ ...kid, itemSize, amount }))
+      }   
+       return (
         <div>
             <Header />
             <p className=" itemHeader ml-auto text-left">  <span className='cursor-pointer' onClick={() => router.push('/kids')}>Kids</span> </p>
@@ -80,11 +83,7 @@ export default function Item({ kid }) {
 
                 </div>
 
-
-
-
-
-                <div onClick={addToCart} className='bg-black bag mt-2 cursor-pointer'>
+                <div onClick={click} className='bg-black bag mt-2 cursor-pointer'>
                     <p className='text-center text-white bagText '>Add to bag</p>
                 </div>
                 <hr className='description_line' />

@@ -23,6 +23,8 @@ export default function Item({ summerclothes }) {
     console.log(itemSize);
 
     const addToCart = () => {
+        alert("Added to cart!");
+
         dispatch(addProduct({ ...summerclothes, itemSize, amount, price }))
     }
 
